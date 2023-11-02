@@ -1,0 +1,133 @@
+* video::-webkit-media-controls-panel {
+    display: none !important;
+    opacity: 1 !important;
+
+}
+
+/* 
+video {
+    cursor: pointer;
+   
+} */
+
+
+.like-dislike {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+
+.dislike-icon {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+.btn1 {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.video-container {
+    width: 320px;
+    /* Set the width to your desired fixed width */
+    height: 500px;
+    /* Set the height to your desired fixed height */
+    overflow: hidden;
+    /* Hide any overflow content if the video aspect ratio is different */
+    /* margin-bottom: 5px; */
+    border-radius: 10px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body {
+    width: 320px;
+    /* Set the width to your desired fixed width */
+    /* height: 200px; */
+    /* overflow: scroll; */
+}
+
+/* .custom-position {
+    position: absolute;
+    top: 100px;
+   
+} */
+
+
+.video-title {
+    position: absolute;
+    top: 425px;
+    /* background-color: aqua; */
+    left: 20px;
+}
+
+.desc {
+    position: absolute;
+    top: 450px;
+    left: 20px;
+}
+
+.uploader-info {
+    position: absolute;
+    top: 400px;
+    left: 20px;
+}
+
+.follow-btn {
+    position: absolute;
+    top: 395px;
+    left: 120px;
+    padding: 2px 6px;
+    /* padding-left: 4px;
+    padding-right: 4px; */
+    border-radius: 12px;
+}
+
+
+
+.content-main {
+    width: 320px;
+    /* Set the width to your desired fixed width */
+    height: 700px;
+}
+
+/* Center the "Next" and "Previous" button icons and adjust their size */
+/* Hide the "Next" and "Previous" button icons */
+
+/* Hide the "Next" and "Previous" button icons */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background: transparent; /* Make the icons transparent */
+    pointer-events: none; /* Disable pointer events on the icons */
+}
+
+
+
+/* .vertical-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-inner {
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+} */
