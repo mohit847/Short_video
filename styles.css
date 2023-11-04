@@ -105,10 +105,6 @@ video {
 /* Hide the "Next" and "Previous" button icons */
 
 /* Hide the "Next" and "Previous" button icons */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background: transparent; /* Make the icons transparent */
-    pointer-events: none; /* Disable pointer events on the icons */
-}
 
 
 

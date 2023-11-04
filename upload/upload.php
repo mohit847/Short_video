@@ -21,7 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!in_array(strtolower($fileExtension), $allowedExtensions)) {
         echo "Invalid file format. Please upload a valid video.";
-    } else {
+    } elseif (strlen($videoDescription) > 60) {
+        echo "Video description must not exceed 60 characters.";
+    }else {
         // Define the directory where uploaded videos will be stored
         $uploadDir = "uploads/";
         $uploadPath = $uploadDir . basename($videoFile["name"]);

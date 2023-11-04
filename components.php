@@ -42,9 +42,9 @@ function renderVideoSection()
 
 
             // Display the like and dislike icons with like count
-            echo '<div class="like-dislike d-flex flex-column text-white fs-2 gap-3">';
+            echo '<div class="like-dislike d-flex flex-column text-white fs-2 gap-3 " style="position: absolute; top: 150px; left: 270px;">';
             echo '<i class="fas fa-thumbs-up like-icon like-dislike-icon" data-action="like" data-video-id="' . $video['id'] . '"></i>';
-            echo '<i class="fas fa-thumbs-down dislike-icon like-dislike-icon" data-action="dislike" data-video-id="' . $video['id'] . '"></i>';
+            echo '<i class="fas fa-thumbs-down dislike-icon like-dislike-icon flip-horizontal" data-action="dislike" data-video-id="' . $video['id'] . '"></i>';
             echo '</div>';
             // echo '<span class="like-count">' . $video['like_count'] . '</span>';
 
@@ -116,12 +116,15 @@ function renderVideoSection()
         }
 
         echo '</div>';
-        echo '<button class="carousel-control-prev pe-none" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">';
+
+        echo '<button class="carousel-control-prev " type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">';
         echo '<span class="carousel-control-prev-icon opacity-25" aria-hidden="true"></span>';
-        // echo '</button>';
-        echo '<button class="carousel-control-next pe-none" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">';
+        echo '</button>';
+
+        echo '<button class="carousel-control-next " type="button" data-bs-target="#videoCarousel" data-bs-slide="next">';
         echo '<span class="carousel-control-next-icon  opacity-25" aria-hidden="true"></span>';
-        // echo '</button>';
+        echo '</button>';
+        
         echo '</div>';
     } else {
         echo 'No videos available.';
